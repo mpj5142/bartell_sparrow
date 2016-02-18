@@ -1,0 +1,1 @@
+This repository stores scripts and summary data for the analysis of the sparrow de novo transcriptome assembly and annotation.
