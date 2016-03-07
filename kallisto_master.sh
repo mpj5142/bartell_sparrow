@@ -4,7 +4,7 @@
 #The output is a matrix of read counds for each transcript labeled by transcript name (col) and sample name (row).
 #filemain and header are temp files, concatanated at end of script
 
-cat Heart1Trim/abundance.tsv | sort | cut -f 1 > filemain.tsv #Get transcript names from first sample
+cat Heart1Trim_kallisto/abundance.tsv | sort | cut -f 1 > filemain.tsv #Get transcript names from first sample
 echo "contig" > header.tsv #Start temp header file
 
 for FILE in $(find . -name 'abundance.tsv') #Find all 'abundance' output files created by Kallisto
